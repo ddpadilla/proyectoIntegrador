@@ -14,6 +14,6 @@ print("presione la tecla UP para finalizar**")
 while True:
     caracter = readchar.readkey()   # la variable caracter almacena la tecla presionada.
     print("Tecla presionada: ", caracter) 
-    if readchar.readkey() == "\x1b[A":
+    if readchar.readkey() == "\x1b[A": # el if valida que la tecla presionada sea UP
         print("Programa finalizado con la tecla UP")
         break
